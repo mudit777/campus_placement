@@ -21,10 +21,6 @@ class BarChart1 extends Component {
 
         this.drawChart(props.data, props.placement_status)
     }
-    
-    // componentDidMount() {
-    //   this.drawChart();
-    // }
       
     drawChart(bardata, placement_status) {
 
@@ -166,8 +162,6 @@ class BarChart1 extends Component {
 
     render(){
         return <div id='container'><svg height='500px' width='700px' /></div>
-        // return <div id='container' style={{marginLeft: 80}}>
-        // </div>
       }
 
 }

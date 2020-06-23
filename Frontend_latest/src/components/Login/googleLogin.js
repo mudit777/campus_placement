@@ -20,9 +20,7 @@ class googleLogin extends Component {
     }
   }
 
-  // state = { 
-  //   isSignedIn: false 
-  // }
+  
   uiConfig = 
   {
     signInFlow: "popup",
@@ -50,7 +48,6 @@ class googleLogin extends Component {
   render() {
     let redirectVar = null
     if(this.state.isSignedIn)
-      // if(localStorage.getItem("auth"))
         redirectVar = <Redirect to= "/dashboard"/>
     return (
       <div className="myApp">

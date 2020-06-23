@@ -15,7 +15,6 @@ class Create extends Component{
             BookID : "",
             Title : "",
             Author : "",
-            // authFlag : false,
             id : root,
             value : "",
             bar_data : [],
@@ -23,7 +22,7 @@ class Create extends Component{
             placement_status_for_charts : "placed"
         }
         
-        // this.submitLogin = this.submitLogin.bind(this);
+        
         this.changePie = this.changePie.bind(this);
         this.changeBar = this.changeBar.bind(this);
         this.sortTable = this.sortTable.bind(this);
@@ -99,23 +98,6 @@ class Create extends Component{
         });
     }
 
-    // submitLogin = (e) => {
-    //     // axios.defaults.withCredentials = true;
-    //     axios.get('http://localhost:5003/piesearch/gender')
-    //         .then(response => {
-    //             // console.log("Status Code : ",response.status);
-    //             if(response.status === 200){
-    //                 // console.log("Response from backend for pisearch gender : \n", response.data)
-    //                 this.setState({
-    //                     pie_data : response.data
-    //                 })
-                    
-    //             }else{
-    //                 console.log("Response status code is not 200, something went wrong!")
-    //             }
-    //         });
-    // }
-
     sortBarChartData() {
         var table, rows = 0
         table = document.getElementById("myTable");
@@ -141,21 +123,14 @@ class Create extends Component{
         var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
         table = document.getElementById(table_id);
         switching = true;
-        //Set the sorting direction to ascending:
         dir = "asc"; 
-        /*Make a loop that will continue until no switching has been done:*/
         while (switching) {
-            //start by saying: no switching is done:
             switching = false;
             rows = table.rows;
-            /*Loop through all table rows (except the first, which contains table headers):*/
             for (i = 1; i < (rows.length - 1); i++) {
-                //start by saying there should be no switching:
                 shouldSwitch = false;
-                /*Get the two elements you want to compare, one from current row and one from the next:*/
                 x = rows[i].getElementsByTagName("TD")[n];
                 y = rows[i + 1].getElementsByTagName("TD")[n];
-                /*check if the two rows should switch place, based on the direction, asc or desc:*/
                 if (dir == "asc") {
                     if(n==2) {
                         if (Number(x.innerHTML) > Number(y.innerHTML)) {
@@ -185,12 +160,10 @@ class Create extends Component{
                 }
             }
             if (shouldSwitch) {
-            /*If a switch has been marked, make the switch and mark that a switch has been done:*/
                 rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
                 switching = true;
                 switchcount ++;      
             } else {
-                /*If no switching has been done AND the direction is "asc", set the direction to "desc" and run the while loop again.*/
                 if (switchcount == 0 && dir == "asc") {
                     dir = "desc";
                     switching = true;
@@ -277,11 +250,9 @@ class Create extends Component{
                                 <li class="listitems"><a class="dropdown-item menulinks" href="#" onClick = {() => {this.changePie("degree_t")}} role="menu">Degree Field</a></li>
                                 <li class="listitems"><a class="dropdown-item menulinks" href="#" onClick = {() => {this.changePie("specialisation")}}role="menu">MBA Specialisation</a></li>
                                 <li class="listitems"><a class="dropdown-item menulinks" href="#" onClick = {() => {this.changePie("status")}} role="menu">Placed/Unplaced</a></li>
-                                {/* <li class="listitems"><Link to="/homepage" onClick = {this.handleLogout} class="dropdown-item menulinks" role="menu">Logout</Link></li> */}
                             </ul>
                         </li>
                         <PieChart data={this.state.pie_data}/>
-                        {/* <button onClick = {this.submitLogin} class="btn btn-primary">Login</button> */}
                     </div>
                     <div class = "right-container">
                         <br></br>
