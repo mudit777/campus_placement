@@ -1,0 +1,148 @@
+
+.form-heading { color:#fff; font-size:23px;}
+.panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 50px 70px 70px 71px;
+  border: 2px solid black;
+}
+
+.login-form .form-group {
+  margin-bottom:10px;
+}
+.login-form{ text-align:center;}
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login-form  .btn.btn-primary {
+  background: #f0ad4e none repeat scroll 0 0;
+  border-color: #f0ad4e;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+.forgot {
+  text-align: left; margin-bottom:30px;
+}
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+}
+.back { text-align: left; margin-top:10px;}
+.back a {color: #444444; font-size: 13px;text-decoration: none;}
+
+.display-data-Container {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+.display-data {
+  border: 1px solid red;
+  width: 20px;
+  height: 10px;
+  margin: 5px;
+}
+
+.left-container {
+  float: left;
+  width: 55%;
+  height: 500px;
+  border: 2 px solid gray;
+  margin-bottom: 30px;
+}
+
+.right-container {
+  float: right;
+  width: 45%;
+  height: 450px;
+  border: 2 px solid gray;
+  margin-bottom: 30px; 
+}
+
+.left-pie-container{
+  float: left;
+  width: 55%;
+  height: 450px;
+  border-top: 1 px solid black !important;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+.dropdown-items {
+  float: right;
+  display: inline-block;
+  width:160px;
+  white-space: nowrap;
+  /* margin-top: 30px; */
+  margin-right: 80px;
+  background-color: #337ab7;
+  text-align: center;
+  height: 30px;
+  padding: 4px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.mainlinks {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.menulinks {
+  color:#007bff !important;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  text-align: center;
+  margin: 0px !important;
+  font-size: 20px;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+#myTable{
+  margin-top: 80px;
+  margin-right: 30px;
+  width: 90%;
+}
+
+#myTable1{
+  margin-top: 100px;
+  margin-right: 30px;
+  width: 90%;
+}
